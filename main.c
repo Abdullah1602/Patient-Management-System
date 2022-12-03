@@ -2,19 +2,19 @@
 #include <string.h>
 #include <stdlib.h>
 #include "struct.h"
-// #include "addpatient.h"
-// #include "deletepatient.h"
-// #include "checkid.h"
+#include "addpatient.h"
+#include "deletepatient.h"
+#include "checkid.h"
 #include "updatepatient.h"
 #include "searchpatient.h"
-// #include "displaypatient.h"
+#include "displaypatient.h"
 int introduction ();
-// void add_patient();
-// void delete_pateint();
+void add_patient();
+void delete_pateint();
 void update_patient();
 void search_patient();
-// void all_patients();
-// int checkid(int );
+void all_patients();
+int checkid(int );
 int main()
 {
     int flag=1;
@@ -24,12 +24,12 @@ int main()
       switch (intro)
         {
         case 1:
-            // add_patient();
+            add_patient();
             sleep(3);
             system("cls");
             break;
         case 2:
-            // delete_patient();
+            delete_patient();
             sleep(3);
             system("cls");
             break;
@@ -44,7 +44,7 @@ int main()
             system("cls");
             break;
         case 5:
-            // all_patients();
+            all_patients();
             break;
         case 6:
             flag=0;
